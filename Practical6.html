@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout</title>
+    <style>
+        body {
+            background-color: rgb(201, 196, 196);
+        }
+        
+        div {
+            width: 290px;
+            height: auto;
+            float: left;
+            margin: 15px;
+            padding: 3px;
+            background-color: white;
+            border-radius: 10px;
+        }
+        
+        img {
+            width: 260px;
+            height: 150px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        
+        h4,
+        h1 {
+            text-align: center;
+        }
+        
+        p {
+            font-size: 18px;
+            text-align: justify;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        
+        a {
+            padding: 10px 20px;
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            background-color: red;
+            width: 190px;
+            margin: 15px auto;
+            border-radius: 8px;
+        }
+        
+        div a:hover {
+            background-color: rgb(41, 73, 170);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="color:white">PRACTICAL-6 : CREATE FOLLOWING LAYOUT USING CSS LAYOUT PROPERTIES</h1>
+    <br><br>
+    <div>
+        <img src="./images/html_image.png" alt="photo">
+        <h4>Introduction to HTML</h4>
+        <p>
+            HTML stands for Hypertext Markup Language, and it is the most widely used language to write Web Pages.
+        </p>
+        <a href="htmltext.html" target="_blank">Read More</a>
+    </div>
+    <div>
+        <img src="./images/css_image.jpg" alt="photo">
+        <h4>Introduction to CSS</h4>
+        <p>
+            CSS is short for Cascading Style Sheets, and is the preferred way for setting the look and feel of a website.
+        </p>
+        <a href="csstext.html" target="_blank">Read More</a>
+    </div>
+    <div>
+        <img src="./images/javascript_image.png" alt="photo">
+        <h4>Introduction to JavaScript</h4>
+        <p>
+            JavaScript is a dynamic computer programming language and most commonly used as a part of web pages.
+        </p>
+        <a href="javascripttext.html" target="_blank">Read More</a>
+    </div>
+    <div>
+        <img src="./images/bootstrap_image.jpg" alt="photo">
+        <h4>Introduction to Bootstrap</h4>
+        <p>
+            Bootstrap is a free and open-source CSS framework directed at responsive, mobile front-end web development.
+        </p>
+        <a href="bootstraptext.html" target="_blank">Read More</a>
+    </div>
+</body>
+
+</html>
