@@ -1,0 +1,748 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-style: Arial;
+}
+
+html {
+    scroll-padding-top: 60px;
+    scroll-behavior: smooth;
+}
+
+@media(min-width:1200px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+        font-style: Arial;
+    }
+    html {
+        scroll-padding-top: 50px;
+        scroll-behavior: smooth;
+    }
+    .navbar {
+        position: fixed;
+        top: 0;
+        margin: 0px;
+        width: 100%;
+        height: 50px;
+        background-color: gray;
+    }
+    .navbar ul {
+        list-style: none;
+        float: right;
+        padding: 0 20px;
+    }
+    .navbar ul li {
+        display: inline-block;
+        line-height: 50px;
+    }
+    .navbar ul li a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 0px 18px;
+        font-size: 30px;
+    }
+    .navbar ul li a:hover {
+        color: black;
+        background-color: white;
+        box-shadow: 3px 3px 3px black;
+    }
+    .banner {
+        background-image: url(../images/emile-perron-xrVDYZRGdw4-unsplash.jpg);
+        background-size: cover;
+        height: 800px;
+        width: 100%;
+        margin-top: 30px;
+        color: white;
+        font-size: 35px;
+    }
+    .team {
+        color: brown;
+        text-align: center;
+    }
+    .circle-box {
+        height: 450px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .team {
+        background-color: lightblue;
+    }
+    .about:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .team:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .container:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .circle {
+        margin-top: 60px;
+        margin-left: 45px;
+        margin-bottom: 10px;
+        border-radius: 50%;
+        box-shadow: 3px 3px 3px 3px black;
+        width: 250px;
+        float: left;
+        height: 250px;
+    }
+    #c1 {
+        background-image: url(../images/1.png);
+        background-size: cover;
+    }
+    #c2 {
+        background-image: url(../images/3.png);
+        background-size: cover;
+    }
+    #c3 {
+        background-image: url(../images/2.png);
+        background-size: cover;
+    }
+    #c4 {
+        background-image: url(../images/9.png);
+        background-size: cover;
+    }
+    h2 {
+        font-size: 35px;
+        color: brown;
+        text-align: center;
+    }
+    /* following is copied from practical-6 & 8 and is for technologies */
+    .box:hover {
+        background-color: wheat;
+        transition: 2s;
+    }
+    .container {
+        margin-top: 60px;
+        margin-right: auto;
+        background-color: lavender;
+        margin-left: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #head1 {
+        color: white;
+        text-align: center;
+    }
+    .box {
+        margin-left: 4%;
+        margin-bottom: 40px;
+        background-color: pink;
+        border: solid pink;
+        border-radius: 8px;
+        box-shadow: 3px 3px 3px 3px black;
+        width: 220px;
+        float: left;
+        height: 380px;
+    }
+    .box h3 {
+        text-align: center;
+        margin: 10px 0px;
+    }
+    .box p {
+        margin: 10px 0px;
+        text-align: justify;
+    }
+    .box a {
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        border-radius: 8px;
+        background-color: red;
+        padding: 10px;
+    }
+    .box a:hover {
+        background-color: blue;
+        box-shadow: 3px 3px 3px black;
+        transition: transform 2s;
+        transform: scale(1.05);
+    }
+    .box img {
+        border-radius: 8px;
+        height: 150px;
+    }
+    .about {
+        background-color: lightcyan;
+    }
+    h3 {
+        text-align: center;
+        color: black;
+    }
+    .innerleft {
+        width: 47%;
+        height: 100%;
+        padding-right: .5%;
+        padding-left: .5%;
+        margin: 10px;
+        font-size: 20px;
+        text-align: justify;
+        background-color: green;
+        float: left;
+    }
+    .innerright {
+        width: 48%;
+        height: 100%;
+        margin: 10px;
+        float: left;
+    }
+    .outerbox {
+        height: 450px;
+    }
+    .right {
+        height: 32%;
+        border: solid black;
+        margin-bottom: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .outerbox a:hover {
+        color: black;
+    }
+    .outerbox a {
+        text-decoration: none;
+    }
+    #r1 {
+        background-image: url(../images/p1.jpg);
+        background-size: cover;
+    }
+    #r2 {
+        background-image: url(../images/p2.jpeg);
+        display: flex;
+    }
+    #r3 {
+        background-image: url(../images/p3.jpg);
+        background-size: auto;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+
+
+/* 1. First Break-point */
+
+
+/* 801px - 1199px */
+
+@media (min-width: 801px) and (max-width: 1199px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+        font-style: Arial;
+    }
+    html {
+        scroll-padding-top: 60px;
+        scroll-behavior: smooth;
+    }
+    .navbar {
+        position: fixed;
+        top: 0;
+        margin: 0px;
+        width: 100%;
+        height: 50px;
+        background-color: gray;
+    }
+    .navbar ul {
+        list-style: none;
+        float: right;
+        padding: 0 20px;
+    }
+    .navbar ul li {
+        display: inline-block;
+        line-height: 50px;
+    }
+    .navbar ul li a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 0px 8px;
+        font-size: 22px;
+    }
+    .navbar ul li a:hover {
+        color: black;
+        background-color: white;
+        box-shadow: 3px 3px 3px black;
+    }
+    .banner {
+        background-image: url(../images/emile-perron-xrVDYZRGdw4-unsplash.jpg);
+        background-size: cover;
+        height: 800px;
+        width: 100%;
+        margin-top: 30px;
+        color: white;
+        font-size: 35px;
+    }
+    .team {
+        color: brown;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .circle-box {
+        height: 750px;
+        width: 650px;
+        /* border: solid black; */
+    }
+    .team {
+        background-color: lightblue;
+    }
+    .about:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .team:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .container:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .circle {
+        margin-top: 60px;
+        margin-left: 25px;
+        margin-bottom: 10px;
+        border-radius: 50%;
+        box-shadow: 3px 3px 3px 3px black;
+        width: 280px;
+        float: left;
+        height: 280px;
+    }
+    #c1 {
+        background-image: url(../images/1.png);
+        background-size: cover;
+    }
+    #c2 {
+        background-image: url(../images/3.png);
+        background-size: cover;
+    }
+    #c3 {
+        background-image: url(../images/2.png);
+        background-size: cover;
+    }
+    #c4 {
+        background-image: url(../images/9.png);
+        background-size: cover;
+    }
+    h2 {
+        font-size: 35px;
+        color: brown;
+        text-align: center;
+    }
+    /* following is copied from practical-6 & 8 and is for technologies */
+    .box:hover {
+        background-color: wheat;
+        transition: 2s;
+    }
+    .container {
+        margin-top: 60px;
+        margin-right: auto;
+        background-color: lavender;
+        margin-left: auto;
+        width: 700px;
+    }
+    #head1 {
+        color: white;
+        text-align: center;
+    }
+    .box {
+        margin-left: 10%;
+        margin-bottom: 40px;
+        background-color: pink;
+        border: solid pink;
+        border-radius: 8px;
+        box-shadow: 3px 3px 3px 3px black;
+        width: 250px;
+        float: left;
+        height: 350px;
+    }
+    .box h3 {
+        text-align: center;
+        margin: 10px 0px;
+    }
+    .box p {
+        margin: 10px 0px;
+        text-align: justify;
+    }
+    .box a {
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        border-radius: 8px;
+        background-color: red;
+        padding: 10px;
+    }
+    .box a:hover {
+        background-color: blue;
+        box-shadow: 3px 3px 3px black;
+        transition: transform 2s;
+        transform: scale(1.05);
+    }
+    .box img {
+        border-radius: 8px;
+        height: 150px;
+    }
+    .about {
+        background-color: lightcyan;
+    }
+    h3 {
+        text-align: center;
+        color: black;
+    }
+    .innerleft {
+        width: 45%;
+        height: 100%;
+        padding-right: .5%;
+        padding-left: .5%;
+        margin: 10px;
+        font-size: 12px;
+        text-align: justify;
+        background-color: green;
+        float: left;
+    }
+    .innerright {
+        width: 48%;
+        height: 98%;
+        margin: 10px;
+        float: left;
+    }
+    .outerbox {
+        height: 45vh;
+    }
+    .right {
+        height: 32%;
+        border: solid black;
+        margin-bottom: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .outerbox a:hover {
+        color: black;
+    }
+    .outerbox a {
+        text-decoration: none;
+    }
+    #r1 {
+        background-image: url(../images/p1.jpg);
+        background-size: cover;
+    }
+    #r2 {
+        background-image: url(../images/p2.jpeg);
+        display: flex;
+    }
+    #r3 {
+        background-image: url(../images/p3.jpg);
+        background-size: auto;
+    }
+    .techcon {
+        display: flex;
+        justify-content: center;
+        background-color: lavender;
+        align-items: center;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+
+.show-btn,
+.hide-btn {
+    display: none;
+    font-size: 30px;
+    color: white;
+    line-height: 50px;
+}
+
+#chk {
+    position: absolute;
+    z-index: -10;
+    visibility: hidden;
+}
+
+.show-btn {
+    float: right;
+    margin-right: 15px;
+}
+
+
+/* second breakpoint */
+
+@media (max-width: 800px) {
+    .show-btn,
+    .hide-btn {
+        display: block;
+    }
+    .menu {
+        position: fixed;
+        top: 0;
+        right: -110%;
+        width: 100%;
+        background-color: black;
+        text-align: center;
+        transition: .8s;
+        display: block;
+        /* padding: 75px 0px; */
+    }
+    .hide-btn {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
+    #chk:checked~.menu {
+        right: 0;
+    }
+    .navbar {
+        position: fixed;
+        top: 0;
+        margin: 0px;
+        width: 100%;
+        height: 50px;
+        background-color: gray;
+    }
+    .navbar ul {
+        list-style: none;
+        padding: 60px 0px;
+    }
+    .navbar ul li {
+        display: block;
+        line-height: 50px;
+    }
+    .navbar ul li a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 0px 8px;
+        font-size: 22px;
+        border: solid gray;
+        border-radius: 8px;
+    }
+    .navbar ul li a:hover {
+        color: black;
+        background-color: white;
+        box-shadow: 3px 3px 3px black;
+    }
+    .banner {
+        background-image: url(../images/emile-perron-xrVDYZRGdw4-unsplash.jpg);
+        background-size: cover;
+        height: 800px;
+        width: 100%;
+        margin-top: 30px;
+        color: white;
+        font-size: 35px;
+    }
+    .team {
+        color: brown;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: lightblue;
+    }
+    .circle-box {
+        height: 750px;
+        width: 650px;
+    }
+    .about:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .team:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .container:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .circle {
+        margin-top: 60px;
+        margin-left: 25px;
+        margin-bottom: 10px;
+        border-radius: 50%;
+        box-shadow: 3px 3px 3px 3px black;
+        width: 280px;
+        float: left;
+        height: 280px;
+    }
+    #c1 {
+        background-image: url(../images/1.png);
+        background-size: cover;
+    }
+    #c2 {
+        background-image: url(../images/3.png);
+        background-size: cover;
+    }
+    #c3 {
+        background-image: url(../images/2.png);
+        background-size: cover;
+    }
+    #c4 {
+        background-image: url(../images/9.png);
+        background-size: cover;
+    }
+    h2 {
+        font-size: 35px;
+        color: brown;
+        text-align: center;
+    }
+    /* following is copied from practical-6 & 8 and is for technologies */
+    .box:hover {
+        background-color: wheat;
+        transition: 2s;
+    }
+    .container {
+        margin-top: 60px;
+        margin-right: auto;
+        background-color: lavender;
+        margin-left: auto;
+        width: 700px;
+    }
+    #head1 {
+        color: white;
+        text-align: center;
+    }
+    .box {
+        margin-left: 10%;
+        margin-bottom: 40px;
+        background-color: pink;
+        border: solid pink;
+        border-radius: 8px;
+        box-shadow: 3px 3px 3px 3px black;
+        width: 250px;
+        float: left;
+        height: 350px;
+    }
+    .box h3 {
+        text-align: center;
+        margin: 10px 0px;
+    }
+    .box p {
+        margin: 10px 0px;
+        text-align: justify;
+    }
+    .box a {
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        border-radius: 8px;
+        background-color: red;
+        padding: 10px;
+    }
+    .box a:hover {
+        background-color: blue;
+        box-shadow: 3px 3px 3px black;
+        transition: transform 2s;
+        transform: scale(1.05);
+    }
+    .box img {
+        border-radius: 8px;
+        height: 150px;
+    }
+    .about {
+        background-color: lightcyan;
+    }
+    h3 {
+        text-align: center;
+        color: black;
+    }
+    .innerleft {
+        width: 99%;
+        height: auto;
+        padding-right: .5%;
+        padding-left: .5%;
+        margin: 10px;
+        font-size: 12px;
+        text-align: justify;
+        background-color: green;
+    }
+    .innerright {
+        width: 100%;
+        height: 200px;
+        margin: 10px;
+    }
+    .outerbox {
+        height: auto;
+    }
+    .right {
+        height: 32%;
+        border: solid black;
+        margin-bottom: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .outerbox a:hover {
+        color: black;
+    }
+    .outerbox a {
+        text-decoration: none;
+    }
+    #r1 {
+        background-image: url(../images/p1.jpg);
+        background-size: cover;
+    }
+    #r2 {
+        background-image: url(../images/p2.jpeg);
+        display: flex;
+    }
+    #r3 {
+        background-image: url(../images/p3.jpg);
+        background-size: auto;
+    }
+    .techcon {
+        display: flex;
+        justify-content: center;
+        background-color: lavender;
+        align-items: center;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+
+@media(max-width:680px) {
+    .banner {
+        font-size: 30px;
+        height: 600px;
+        width: 100%
+    }
+    .circle-box {
+        height: 1500px;
+        width: 350px;
+    }
+    .container {
+        margin-top: 60px;
+        margin-right: auto;
+        background-color: lavender;
+        margin-left: auto;
+        width: 350px;
+    }
+}
+
+@media(max-width:400px) {
+    .banner {
+        font-size: 20px;
+    }
+}

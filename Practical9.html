@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-8</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style>
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-style: Arial;
+        }
+        
+        .navbar {
+            position: fixed;
+            top: 0;
+            margin: 0px;
+            width: 100vw;
+            height: 10vh;
+            background-color:grey;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .navbar ul {
+            list-style: none;
+        }
+        
+        .navbar ul li {
+            float: left;
+        }
+        
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 6px 20px;
+            font-size: 35px;
+        }
+        
+        .navbar ul li a:hover {
+            color: black;
+            background-color: white;
+            box-shadow: 3px 3px 3px black;
+        }
+        
+        .banner {
+            background-image: url(./images/home.jpg);
+            background-image: ;
+            background-size: auto;
+            height: 100vh;
+            width: 100%;
+            margin-top: 10vh;
+            color: white;
+            font-size: 35px;
+        }
+        
+        .team {
+            color: brown;
+            text-align: center;
+        }
+        
+        .circle-box {
+            height: 350px;
+        }
+        
+        .team {
+            background-color:white;
+        }
+        
+        .about:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        
+        .team:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        
+        .container:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        
+        .circle {
+            background-color:yellowgreen;
+            width: 200px;
+            height: 200px;
+            border-radius: 150px;
+            margin-top: 30px;
+            margin-left: 70px;
+            margin-right: 50px;
+            float: left;
+            
+        }
+        
+        #c1 {
+            background-image: url(./images/m1.jpg);
+            background-size: cover;
+        }
+        
+        #c2 {
+            background-image: url(./images/m2.png);
+            background-size: cover;
+        }
+        
+        #c3 {
+            background-image: url(./images/m3.png);
+            background-size: cover;
+        }
+        
+        #c4 {
+            background-image: url(./images/m4.png);
+            background-size: cover;
+        }
+        
+        h2 {
+            font-size: 40px;
+            color: black;
+            text-align: center;
+        }
+        
+        
+        .box:hover {
+            background-color: wheat;
+            transition: 2s;
+        }
+        
+        .container {
+            margin-top: 60px;
+            margin-right: auto;
+            background-color:white;
+            margin-left: auto;
+        }
+        
+        #head1 {
+            color: white;
+            text-align: center;
+        }
+        
+        .box {
+            margin-left: 30px;
+            margin-right: 50px;
+            margin-bottom: 40px;
+            margin-top: 10px;
+            background-color:white;
+            border: solid black;
+            border-radius: 8px;
+            box-shadow: 3px 3px 3px 3px black;
+            width: 250px;
+            float: left;
+            float: right;
+            height: 350px;
+        }
+        
+        .box h3 {
+            text-align: center;
+            margin: 10px 0px;
+        }
+        
+        .box p {
+            margin: 10px 0px;
+            text-align: justify;
+        }
+        
+        .box a {
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            border-radius: 8px;
+            background-color: red;
+            padding: 10px;
+        }
+        
+        .box a:hover {
+            background-color: blue;
+            box-shadow: 3px 3px 3px black;
+            transition: transform 2s;
+            transform: scale(1.05);
+        }
+        
+        .box img {
+            border-radius: 8px;
+            height: 150px;
+        }
+        
+        .about {
+            background-color:white;
+        }
+        
+        h3 {
+            text-align: center;
+            color: black;
+        }
+        
+        .innerleft {
+            width: 47%;
+            padding-right: .5%;
+            padding-left: .5%;
+            margin: 10px;
+            font-size: 25px;
+            color: white;
+            text-align: justify;
+            height: auto;
+            background-color:grey;
+            float: left;
+        }
+        
+        .innerright {
+            width: 48%;
+            height: 40vh;
+            margin: 10px;
+            float: left;
+        }
+        
+        .outerbox {
+            height: auto;
+        }
+        
+        .right {
+            height: 73%;
+            margin-bottom: 10px;
+        }
+        
+        .outerbox a:hover {
+            color: black;
+        }
+        
+        .outerbox a {
+            text-decoration: none;
+        }
+        
+        .right {
+            display: flex;
+            justify-content: center;
+            align-items:top;
+        }
+        
+        #r1 {
+            background-image: url(./images/p1.jpg);
+            background-size: cover;
+        }
+        
+        #r2 {
+            background-image: url(./images/p2.jpeg);
+            display: flex;
+        }
+        
+        #r3 {
+            background-image: url(./images/p3.jpg);
+            background-size: auto;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <input type="checkbox"  id="chk">
+        <label for="chk" class="show-btn">
+            <i class="fa fa-bars fa-2x"></i>
+        </label>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#About-us">ABOUT US</a></li>
+            <li><a href="#TEAM">TEAM</a></li>
+            <li><a href="#techno">TECHNOLOGIES</a></li>
+            <li><a href="#Contact">CONTACT</a></li>
+            <label for="chk" class="hide-btn">
+                <i class="fa fa-times fa-2x"></i>
+            </label>
+        </ul>
+
+    </div>
+    <br>
+    <div class="banner">
+        <h1>PRACTICAL-9</h1>
+    </div>
+
+    <div class="team">
+        <a name="TEAM"></a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2>Team Members</h2>
+        <div class="circle-box">
+            <div class="circle" id="c1"></div>
+            <div class="circle" id="c2"></div>
+            <div class="circle" id="c3"></div>
+            <div class="circle" id="c4"></div>
+        </div>
+    </div>
+
+    <div class="about">
+        <a name="About-us"></a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2>About us</h2>
+        <div class="outerbox">
+            <div class="innerleft">
+                <h3>About Projects</h3>
+                <br>
+                <p><b>
+                    Developed detailed project plans to track progress and improve efficiency.Prepared budgets based on project needs.Tracked spendings and project costs to stay within budget.Managed and supervised teams from multiple departments.Built strong relationships with stakeholders and customers.Monitored project progress and made adjustments as needed.Recruiters understand well that job success isn't only about experience. Many attributes can make a difference in an applicant.Once you understand those attributes and highlight them in your resume, your chances are as good as those of any senior candidate.The hiring company is looking for a project manager to handle specific tasks. You'll be able to find more details about that in the job application.Read it carefully, identify those duties, and prepare to include them in your resume.Now to be convincing, feature the specific skills that allow you to perform those tasks. And support that with your educational background and unique certificates.
+                </b></p>
+            </div>
+            <div class="innerright">
+                <div class="right" id="r1">
+                    <h1>Project-1</h1>
+                </div>
+                <div class="right" id="r2">
+                    <h1>Project-2</h1>
+                </div>
+                <div class="right" id="r3">
+                    <h1>Project-3</h1>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <div class="container">
+        <a name="techno"></a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2>Technologies Used</h2>
+        <br>
+        <br>
+        <div class="box">
+            <img src="./images/html_image.png" alt="html image" width="250px">
+            <h3>Introduction to html</h3>
+            <p>HTML stands for Hypertext Markup Language, and it is the most widely used language to write Web Pages.Hypertext refers to the way in which Web pages.</p>
+            <a href="htmltext.html">Read More</a>
+
+        </div>
+        <div class="box">
+            <img src="./images/css_image.jpg" alt="css image" width="250px">
+            <h3>Introduction to CSS</h3>
+            <p>CSS is short for Cascading Style Sheets, and is the preferred way for setting the look and feel of a website. Cascading Style Sheets (CSS) is a markup language </p>
+            <a href="csstext.html">Read More</a>
+
+        </div>
+        <div class="box">
+            <img src="./images/javascript_image.png" alt="html image" width="250px">
+            <h3>Introduction to JavaScript</h3>
+            <p>JavaScript is a dynamic computer programming language. It is lightweight and most commonly used as a part of web pages, whose implementations</p>
+            <a href="javascripttext.html">Read More</a>
+
+        </div>
+        <div class="box">
+            <img src="./images/bootstrap_image.jpg" alt="html image" width="250px">
+            <h3>Introduction to Bootstrap</h3>
+            <p>Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS- and JavaScript-based </p> <a href="bootstraptext.html">Read More</a>
+        </div>
+    </div>>
+
+    <a name="Contact"></a>
+    <h2>Contact:</h2>
+    <br>
+    <h2>Website Template for practical-8</h2>
+    <h3><a href="#">Back to Top</a></h3>
+
+</body>
+
+</html>
