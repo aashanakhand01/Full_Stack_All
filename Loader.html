@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+            height: 100vh;
+        }
+        .load{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .load h2{
+            font-size: 40px;
+            color: teal;
+        }
+        .circle{
+            width: 15px;
+            height: 15px;
+            border-radius: 20px;
+            background-color: blue;
+            float:right;
+            padding: 2px;
+            margin-left: 15px;
+            animation: bounce 2s linear infinite;
+            
+        }
+        @keyframes bounce {
+            0% {
+                transform: scale(1);
+                
+            }
+            50% {
+                transform: scale(0.2);
+                background-color: yellow;
+            }
+            100% {
+                transform: scale(1);
+              
+            } 
+            
+        }
+        #c1{
+            
+        }
+        #c2{
+            animation-delay: .2s;
+        }
+        #c3{
+            animation-delay: .4s;
+        }
+        #c4{
+            animation-delay: .6s;
+        }
+        #c5{
+            animation-delay: .8s;
+        }
+    </style>
+</head>
+<body>
+    <div class="load">
+        <h2>Loading</h2>
+        <div class="circle" id="c1"></div>
+        <div class="circle" id="c2"></div>
+        <div class="circle" id="c3"></div>
+        <div class="circle" id="c4"></div>
+        <div class="circle" id="c5"></div>
+    </div>
+    
+</body>
+</html>
