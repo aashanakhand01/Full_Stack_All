@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: darkslateblue;
+    font-family: "Open Sans", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: white;
+    /* padding: 20px; */
+    border-radius: 5px;
+    width: 400px;
+    overflow: hidden;
+}
+
+.container .header {
+    background: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+.container .header h2 {
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.form {
+    padding: 20px 30px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    display: block;
+    padding: 5px;
+}
+
+.form-control input {
+    width: 100%;
+    /* display: block; */
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #f0f0f0;
+    outline: none;
+}
+
+.form-control i {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    visibility: hidden;
+}
+
+.form-control small {
+    display: block;
+    position: absolute;
+    padding-top: 5px;
+    left: 5px;
+    font-weight: 600;
+    visibility: hidden;
+}
+
+.form button {
+    display: block;
+    width: 100%;
+    background: darkslateblue;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+
+/* error and success message styling */
+
+.form-control.success input {
+    border-color: rgb(14, 161, 14);
+}
+
+.form-control.error input {
+    border-color: rgb(197, 10, 10);
+}
+
+.form-control.success .fa-check-circle {
+    visibility: visible;
+    color: rgb(14, 161, 14);
+}
+
+.form-control.error .fa-exclamation-circle {
+    visibility: visible;
+    color: rgb(197, 10, 10);
+}
+
+.form-control.error small {
+    visibility: visible;
+    color: red;
+}
